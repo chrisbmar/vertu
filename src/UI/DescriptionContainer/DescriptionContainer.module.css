@@ -18,3 +18,13 @@
 .DescriptionContainer_textContent {
     line-height: 1.5;
 }
+
+@media only screen and (max-width: 1023px) {
+    .DescriptionContainer {
+        width: 100%;  
+        position: static; 
+        margin: 0;
+        left: 0;
+        top:0;
+    }
+}
