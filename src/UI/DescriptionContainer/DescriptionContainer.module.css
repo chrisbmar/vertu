@@ -1,0 +1,20 @@
+.DescriptionContainer {
+    background-color: rgb(255,255,255, 0.8);
+    width: 360px;
+    /* height: 320px; */
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    margin-top: -160px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.DescriptionContainer_heading {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.DescriptionContainer_textContent {
+    line-height: 1.5;
+}

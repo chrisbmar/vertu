@@ -1,5 +1,6 @@
 .Billboard {
     width: 100%;
+    position: relative;
 }
 
 .Billboard_image {
