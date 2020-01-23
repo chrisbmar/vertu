@@ -4,6 +4,7 @@ import './App.module.css';
 import Header from '../../components/Header/Header';
 import SubHeader from '../../components/SubHeader/SubHeader';
 import Billboard from '../../components/Billboard/Billboard';
+import CallToAction from '../../components/CallToAction/CallToAction';
 
 class App extends Component {
   render () {
@@ -26,6 +27,7 @@ class App extends Component {
           heading="Versa Connect" 
           text={billboardText1}
           buttonText="Make an Enquiry"/>
+        <CallToAction buttonText="View our Versa Connect offers"/>
         <Billboard src="https://www.bristolstreetversa.com/custom/51651.jpg" 
           heading="Keeping you going" 
           text={billboardText2}
