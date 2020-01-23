@@ -1,0 +1,66 @@
+.FixedIcons {
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 25px;
+    background-color: transparent;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FixedIcons_madeBy_inVision {
+    background-color: rgb(255,255,255);
+    opacity: 0.6;
+    width: 130px;
+    text-align: center;
+    padding: 14px;
+    border-radius: 30px;
+    margin-left: 20px;
+    transition-property: background-color;
+    transition: 0.3s;
+}
+
+.FixedIcons_madeBy_inVision:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.FixedIcons_moreInfo {
+    display: flex;
+    margin-right: 15px;
+}
+
+.FixedIcons_moreInfo_item {
+    background-color: rgb(255,255,255);
+    opacity: 0.6;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    border-radius: 50%;
+    color: grey;
+    transition: all 0.2s;
+}
+
+.Fixedcons_moreInfo_item_label {
+    font-size: 12px;
+    margin-left: 5px;
+    display: none;
+}
+
+.FixedIcons_moreInfo_item:hover {
+    width: 120px;
+    border-radius: 25px;
+    opacity: 1;
+    color: black;
+    cursor: pointer;
+}
+
+.FixedIcons_moreInfo_item:hover .Fixedcons_moreInfo_item_label {
+    display: flex;
+}
+

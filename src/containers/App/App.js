@@ -5,6 +5,7 @@ import Header from '../../components/Header/Header';
 import SubHeader from '../../components/SubHeader/SubHeader';
 import Billboard from '../../components/Billboard/Billboard';
 import CallToAction from '../../components/CallToAction/CallToAction';
+import FixedIcons from '../../components/FixedIcons/FixedIcons';
 
 class App extends Component {
   render () {
@@ -32,6 +33,7 @@ class App extends Component {
           heading="Keeping you going" 
           text={billboardText2}
           buttonText="More Information"/>
+        <FixedIcons/>
       </div>
     );
   }
