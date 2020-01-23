@@ -35,6 +35,10 @@ const header = () => (
                 <li class={styles.Header_navigation_list_listItem}>Contact Us</li>
             </ul>
         </nav>
+        <div className={styles.Header_navigation_mobile}>
+            <i class="fas fa-bars"></i>
+        </div>
+
     </header>
 );
 
