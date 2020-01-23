@@ -8,7 +8,8 @@ const billboard = (props) => (
         <img className={styles.Billboard_image}src={props.src}></img>
         <DescriptionContainer 
             text={props.text} 
-            heading={props.heading}/>
+            heading={props.heading}
+            buttonText={props.buttonText}/>
     </div>
 );
 

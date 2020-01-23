@@ -24,10 +24,12 @@ class App extends Component {
         <SubHeader/>
         <Billboard src="https://www.bristolstreetversa.com/custom/51650.jpg" 
           heading="Versa Connect" 
-          text={billboardText1}/>
+          text={billboardText1}
+          buttonText="Make an Enquiry"/>
         <Billboard src="https://www.bristolstreetversa.com/custom/51651.jpg" 
           heading="Keeping you going" 
-          text={billboardText2}/>
+          text={billboardText2}
+          buttonText="More Information"/>
       </div>
     );
   }
