@@ -8,6 +8,7 @@ import CallToAction from '../../components/CallToAction/CallToAction';
 import FixedIcons from '../../components/FixedIcons/FixedIcons';
 import ImageGallery from '../../components/ImageGallery/ImageGallery';
 import VehicleInfo from '../VehicleInfo/VehicleInfo';
+import Footer from '../../components/Footer/Footer';
 
 class App extends Component {
   render () {
@@ -37,6 +38,7 @@ class App extends Component {
           heading="Keeping you going" 
           text={billboardText2}
           buttonText="More Information"/>
+        <Footer />
         <FixedIcons/>
       </div>
     );

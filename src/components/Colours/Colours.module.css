@@ -25,6 +25,10 @@
     margin: 5px;
 }
 
+.Colours_colourSelection_colour:hover {
+    cursor: pointer;
+}
+
 .Colours_metalic {
     display: flex;
     justify-content: center;
