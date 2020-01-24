@@ -1,0 +1,47 @@
+.VehicleInfo {
+    width: 75%;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.VehicleInfo_list {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #1E3F66;
+    border-radius: 2px;
+}
+
+.VehicleInfo_listItem {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.VehicleInfo_listItem a {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    color: #1E3F66;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.VehicleInfo_listItem:not(:last-child) {
+    border-right: 1px solid #1E3F66;
+}
+
+.VehicleInfo_listItem a:hover .VehicleInfo_listItem,
+.VehicleInfo_listItem a:active,
+.VehicleInfo_listItem a.active {
+    background-color: #1E3F66;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
