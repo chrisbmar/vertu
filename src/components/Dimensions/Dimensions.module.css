@@ -39,6 +39,8 @@ table {
     border: 2px solid grey;
     border-spacing: 0;
     border-bottom: 1px solid grey;
+    height: 90%;
+    width: 100%;
 }
 
 th, td {
@@ -53,4 +55,37 @@ th, td {
     align-items: center;
     height: 120px;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 1439px) {
+    th, td {
+        padding: 10px 30px
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .Dimensions_imageContainer {
+        display: none;
+    }
+
+    .Dimensions {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Dimensions_table {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    th, td {
+        font-size: 10px;
+        padding: 10px 20px
+    }
+
+    .Dimnsions_table_heading span {
+        padding: 10px 10px;
+    }
 }

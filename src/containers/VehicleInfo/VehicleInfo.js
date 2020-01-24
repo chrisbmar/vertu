@@ -40,8 +40,6 @@ class VehicleInfo extends Component {
                             activeClassName={styles.active}>Interior Trim
                         </NavLink>
                     </li>
-
-
                 </ul>
                 <Switch>
                     <Route path="/trim" component={Trim} />

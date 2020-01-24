@@ -6,6 +6,10 @@
     width: 100%;
 }
 
+.Layouts_imageContainer_img {
+    width: 100%;
+}
+
 .Layouts_imageContainer_text {
     display: block;
 }

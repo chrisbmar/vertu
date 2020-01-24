@@ -41,8 +41,8 @@ const dimensions = () => {
                         </tbody>
                     </table>
                 </div>
-                <div className={styles.Dimensions_imageContainerContainer}>
-                    <img className={styles.Dimensions_imageContainerContainer_img} src="https://www.bristolstreetversa.com/custom/49792.jpg"></img>
+                <div className={styles.Dimensions_imageContainer}>
+                    <img className={styles.Dimensions_imageContainer_img} src="https://www.bristolstreetversa.com/custom/49792.jpg"></img>
                 </div>
             </div>
             <div className={styles.Dimensions_buttonContainer}>
