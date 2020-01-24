@@ -1,5 +1,5 @@
 .VehicleInfo {
-    width: 75%;
+    width: 85%;
     margin: auto;
     padding: 40px 20px;
 }
@@ -12,6 +12,7 @@
     padding: 0;
     border: 1px solid #1E3F66;
     border-radius: 2px;
+    margin-bottom: 30px;
 }
 
 .VehicleInfo_listItem {

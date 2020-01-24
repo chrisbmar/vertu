@@ -1,0 +1,56 @@
+.Dimensions {
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+
+.Dimnsions_table_heading {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+}
+
+.Dimnsions_table_heading span {
+    padding: 10px 50px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.Dimensions_table {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.Dimensions_imageContainer {
+    width: 50%;
+}
+
+.Dimensions_imageContainer_img {
+    width: 100%;
+}
+
+.tableData___backgroundGrey {
+    background-color: lightgray;
+} 
+
+table {
+    border: 2px solid grey;
+    border-spacing: 0;
+    border-bottom: 1px solid grey;
+}
+
+th, td {
+    border-bottom: 1px solid grey;
+    font-size: 15px;
+    padding: 20px 50px;
+}
+
+.Dimensions_buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-top: 20px;
+}
