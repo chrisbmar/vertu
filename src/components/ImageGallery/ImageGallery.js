@@ -29,7 +29,6 @@ class imageGallery extends Component {
     
     render () {
 
-        console.log(this.state.counter);
         const url = this.state.images[this.state.counter];
 
         return (
