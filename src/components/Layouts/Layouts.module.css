@@ -6,10 +6,6 @@
     width: 100%;
 }
 
-.Layouts_imageContainer_img {
-    width: 100%;
-}
-
 .Layouts_imageContainer_text {
     display: block;
 }
@@ -20,4 +16,10 @@
     align-items: center;
     height: 120px;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .Layouts_imageContainer_img {
+        width: 100%;
+    }
 }
