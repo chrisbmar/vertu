@@ -1,0 +1,19 @@
+.Layouts {
+    font-size: 17px;
+}
+
+.Layouts_imageContainer {
+    width: 100%;
+}
+
+.Layouts_imageContainer_text {
+    display: block;
+}
+
+.Layouts_buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-top: 20px;
+}
