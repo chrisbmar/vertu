@@ -4,6 +4,7 @@ import { Route, Switch, NavLink } from 'react-router-dom';
 
 import Dimensions from '../../components/Dimensions/Dimensions';
 import Layouts from '../../components/Layouts/Layouts';
+import Colours from '../../components/Colours/Colours';
 
 class VehicleInfo extends Component {
     render () {
@@ -42,6 +43,7 @@ class VehicleInfo extends Component {
 
                 </ul>
                 <Switch>
+                    <Route path="/colours" component={Colours} />
                     <Route path="/layouts" component={Layouts} />
                     <Route path="/" component={Dimensions} />
                 </Switch>

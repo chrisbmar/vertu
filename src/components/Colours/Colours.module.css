@@ -1,0 +1,57 @@
+.Colours {
+}
+
+.Colours_imageContainer {
+    max-height: 500px;
+    overflow: hidden;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.Colours_imageContainer_img {
+    width: 100%;
+}
+
+.Colours_colourSelection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Colours_colourSelection_colour {
+    font-size: 38px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.Colours_metalic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.Colours_metalicNo {
+    width: 140px;
+    margin-right: 20px;
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+}
+
+.Colours_metalicYes {
+    width: 320px;
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+}
+
+.Colours_buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-top: 20px;
+}
+
+
