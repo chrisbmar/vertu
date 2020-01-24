@@ -1,0 +1,54 @@
+.Trim {
+    width: 100%;
+}
+
+.Trim_mainImageContainer {
+    height: 450px;
+    overflow: hidden;
+}
+
+.Trim_mainImageContainer_img {
+    width: 100%;
+}
+
+.Trim_thumbnailContainer {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.Trim_thumbnailImageContainer {
+    width: 32%;
+}
+
+.Trim_thumbnailImageContainer_img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.Trim_thumbnailImageContainer_textContent {
+    padding: 10px 0px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.Trim_thumbnailImageContainer_title {
+    font-weight: 500;
+}
+
+.Trim_thumbnailImageContainer_textContent i {
+    font-size: 30px;
+    float: right;
+    color: grey;
+}
+
+.Trim_buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-top: 20px;
+}
+
