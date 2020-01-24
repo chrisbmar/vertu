@@ -1,0 +1,45 @@
+.ImageGallery {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+.ImageGallery_image {
+    width: 100%;
+}
+
+.ImageGallery_image_changeSlide {
+    position: absolute;
+    top: 40%;
+    padding: 16px;
+    color: grey;
+    font-size: 70px;
+    transition: 0.3s ease;
+}
+  
+.ImageGallery_image_changeSlide_right {
+    right: 2px;
+}
+
+.ImageGallery_image_changeSlide_left {
+    left: 2px;
+}
+
+.ImageGallery_image_changeSlide:hover {
+    color: white;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1023px) {
+    .ImageGallery {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .ImageGallery_image_changeSlide {
+        top: 25%;
+    }
+}

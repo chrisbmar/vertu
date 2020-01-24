@@ -6,6 +6,7 @@ import SubHeader from '../../components/SubHeader/SubHeader';
 import Billboard from '../../components/Billboard/Billboard';
 import CallToAction from '../../components/CallToAction/CallToAction';
 import FixedIcons from '../../components/FixedIcons/FixedIcons';
+import ImageGallery from '../../components/ImageGallery/ImageGallery';
 
 class App extends Component {
   render () {
@@ -28,6 +29,7 @@ class App extends Component {
           heading="Versa Connect" 
           text={billboardText1}
           buttonText="Make an Enquiry"/>
+        <ImageGallery />
         <CallToAction buttonText="View our Versa Connect offers"/>
         <Billboard src="https://www.bristolstreetversa.com/custom/51651.jpg" 
           heading="Keeping you going" 
