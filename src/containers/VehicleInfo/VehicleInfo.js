@@ -7,49 +7,37 @@ import Layouts from '../../components/Layouts/Layouts';
 import Colours from '../../components/Colours/Colours';
 import Trim from '../../components/Trim/Trim';
 
-class VehicleInfo extends Component {
-    render () {
+const vehicleInfo = (props) => {
+
+    const routes = (
+        <Switch>
+            <Route path="/trim" component={Trim}/>
+            <Route path="/colours" component={Colours}/>
+            <Route path="/layouts" component={Layouts}/>
+            <Route path="/" component={Dimensions}/>
+        </Switch>
+    );
+  
+    const navigationLinks = props.data.vehicleInfo.map((el, i) => {
         return (
-            <div className={styles.VehicleInfo}>
-                <ul className={styles.VehicleInfo_list}>
-                    <li className={styles.VehicleInfo_listItem}>
-                        <NavLink
-                            to="/"
-                            exact
-                            activeClassName={styles.active}>Dimensions
-                        </NavLink>
-                    </li>
-                    <li className={styles.VehicleInfo_listItem}>
-                        <NavLink
-                            to="/layouts"
-                            exact
-                            activeClassName={styles.active}>Vehicle Layouts
-                        </NavLink>
-                    </li>
-                    <li className={styles.VehicleInfo_listItem}>
-                        <NavLink
-                            to="/colours"
-                            exact
-                            activeClassName={styles.active}>Colour
-                        </NavLink>
-                    </li>
-                    <li className={styles.VehicleInfo_listItem}>
-                        <NavLink
-                            to="/trim"
-                            exact
-                            activeClassName={styles.active}>Interior Trim
-                        </NavLink>
-                    </li>
-                </ul>
-                <Switch>
-                    <Route path="/trim" component={Trim} />
-                    <Route path="/colours" component={Colours} />
-                    <Route path="/layouts" component={Layouts} />
-                    <Route path="/" component={Dimensions} />
-                </Switch>
-            </div>
-        );
-    }
+            <li key={i} className={styles.VehicleInfo_listItem}>
+                <NavLink
+                    to={el.to}
+                    exact
+                    activeClassName={styles.active}>{el.text}
+                </NavLink>
+            </li>
+        )
+    });
+
+    return (
+        <div className={styles.VehicleInfo}>
+            <ul className={styles.VehicleInfo_list}>
+                {navigationLinks}
+            </ul>
+            {routes}
+        </div>
+    );      
 }
 
-export default VehicleInfo;
+export default vehicleInfo;

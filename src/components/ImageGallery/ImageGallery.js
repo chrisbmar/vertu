@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import styles from './ImageGallery.module.css';
 
-class imageGallery extends Component {
+class ImageGallery extends Component {
     state = {
-        images: [
-            'https://www.bristolstreetversa.com/custom/50563.jpg', 
-            'https://www.bristolstreetversa.com/custom/50564.jpg', 
-            'https://www.bristolstreetversa.com/custom/50565.jpg'
-        ],
         counter: 0
     }
 
@@ -28,8 +23,7 @@ class imageGallery extends Component {
     };
     
     render () {
-
-        const url = this.state.images[this.state.counter];
+        const url = this.props.data[this.state.counter];
 
         return (
             <div className={styles.ImageGallery}>
@@ -41,4 +35,4 @@ class imageGallery extends Component {
     }
 };
 
-export default imageGallery
+export default ImageGallery

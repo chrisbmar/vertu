@@ -1,41 +1,21 @@
 import React from 'react';
 import styles from './Trim.module.css';
+import data from '../../data';
 
 import Aux from '../../hoc/Aux/Aux';
 import Button from '../../UI/Button/Button';
 
 const trim = () => {
 
-    const data = {
-        1: {
-            src: "https://www.bristolstreetversa.com/custom/51652.jpg",
-            title: "Titanium",
-            text1: "Insert: Chicane in Medium Stone",
-            text2: "Bolster: Malt in Medium Stone"
-        },
-        2: {
-            src: "https://www.bristolstreetversa.com/custom/51653.jpg",
-            title: "Zetec",
-            text1: "Insert: Route in Charcoal Black",
-            text2: "Bolster: Max in Charcoal Black"
-        },
-        3: {
-            src: "https://www.bristolstreetversa.com/custom/51654.jpg",
-            title: "Titanium",
-            text1: "Insert: Route in Charcoal Black",
-            text2: "Bolster: Malt in Charcoal Black"
-        }
-    }
-
-    const transformedData = Object.keys(data).map((key, i) => {
+    const trimContainer = data.trim.map((el, i) => {
         return (
-            <div className={styles.Trim_thumbnailImageContainer}>
-                <img className={styles.Trim_thumbnailImageContainer_img} src={data[key].src}></img>
+            <div key={i} className={styles.Trim_thumbnailImageContainer}>
+                <img className={styles.Trim_thumbnailImageContainer_img} src={el.src}></img>
                 <div className={styles.Trim_thumbnailImageContainer_textContent}>
-                    <span className={styles.Trim_thumbnailImageContainer_title}>{data[key].title}</span>
+                    <span className={styles.Trim_thumbnailImageContainer_title}>{el.title}</span>
                     <i class="far fa-square"></i>
-                    <p>{data[key].text1}</p>
-                    <p>{data[key].text2}</p>
+                    <p>{el.text1}</p>
+                    <p>{el.text2}</p>
                 </div>
             </div>
         );
@@ -48,7 +28,7 @@ const trim = () => {
                     <img className={styles.Trim_mainImageContainer_img} src="https://www.bristolstreetversa.com/custom/50563.jpg"></img>
                 </div>
                 <div className={styles.Trim_thumbnailContainer}>
-                    {transformedData}
+                    {trimContainer}
                 </div>
             </div>
             <div className={styles.Trim_buttonContainer}>

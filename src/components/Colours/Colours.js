@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Colours.module.css';
+import data from '../../data';
 
 import Aux from '../../hoc/Aux/Aux';
 import Button from '../../UI/Button/Button';
@@ -15,21 +16,9 @@ class Colours extends Component {
 
     render () {
 
-        const colours = {
-            'Solar': {color: "#cdc65e"},
-            'Silver': {color: "#b4b6ba"},
-            'Metalicious': {color: "#e8e8e6"},
-            'Magnetic': {color: "#656360"},
-            'Guard': {color: "#767b76"},
-            'DeepImpactBlue': {color: "#23378f"},
-            'BlazerBlue': {color: "#282a36"},
-            'Black': {color: "#1b1b1b"},
-            'Red': {color: "#bc1d21"}
-        };
-
-        const colourSelector = Object.keys(colours).map((key, i) => { 
+        const colourSelector = Object.keys(data.colours).map((key, i) => { 
             return (
-                <div key={i} className={styles.Colours_colourSelection_colour} style={{color: colours[key].color}}>
+                <div key={i} className={styles.Colours_colourSelection_colour} style={{color: data.colours[key].colour}}>
                     <i onClick={() => this.onColourChange(key)} class="fas fa-circle"></i>
                 </div>
             );

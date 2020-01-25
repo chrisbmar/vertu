@@ -1,7 +1,15 @@
 import React from 'react';
 import styles from './Header.module.css';
 
-const header = () => (
+const header = (props) => {
+
+    const listItems = props.data.map((el, i) => {
+        return (
+            <li key={i} class={styles.Header_navigation_list_listItem}>{el}</li>
+        )
+    });
+
+    return (
     <header className={styles.Header}>
         <div className={styles.Header_logo}>
             <img className={styles.Header_logo_img}src="https://www.bristolstreetversa.com/custom/51649.png"></img>
@@ -28,18 +36,14 @@ const header = () => (
                 </div>
             </div>
             <ul className={styles.Header_navigation_list}>
-                <li class={styles.Header_navigation_list_listItem}>New Vehicles</li>
-                <li class={styles.Header_navigation_list_listItem}>Nearly New/Used Vehicles</li>
-                <li class={styles.Header_navigation_list_listItem}>Motability</li>
-                <li class={styles.Header_navigation_list_listItem}>Aftercare</li>
-                <li class={styles.Header_navigation_list_listItem}>Contact Us</li>
+                {listItems}
             </ul>
         </nav>
         <div className={styles.Header_navigation_mobile}>
             <i class="fas fa-bars"></i>
         </div>
-
     </header>
-);
+    );
+};
 
 export default header;

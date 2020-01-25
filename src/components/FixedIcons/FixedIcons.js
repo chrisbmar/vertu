@@ -1,7 +1,16 @@
 import React from 'react';
 import styles from './FixedIcons.module.css';
 
-const fixedIcons = () => {
+const fixedIcons = (props) => {
+
+    const iconsMoreInfo = props.data.map((el, i) => {
+        return (
+            <div key={i} className={styles.FixedIcons_moreInfo_item}>
+                <i class={el.className}></i>
+                <span className={styles.Fixedcons_moreInfo_item_label}>{el.iconText}</span>
+            </div>
+        )
+    });
 
     return (
     <div className={styles.FixedIcons}>
@@ -9,18 +18,7 @@ const fixedIcons = () => {
             <div className={styles.FixedIcons_madeBy_inVision}>Made in InVision</div>
         </div>
         <div className={styles.FixedIcons_moreInfo}>
-            <div className={styles.FixedIcons_moreInfo_item}>
-                <i class="far fa-comment-alt"></i>
-                <span className={styles.Fixedcons_moreInfo_item_label}>Comments</span>
-            </div>
-            <div className={styles.FixedIcons_moreInfo_item}>
-                <i class="fas fa-code"></i>
-                <span className={styles.Fixedcons_moreInfo_item_label}>Inspect</span>
-            </div>
-            <div className={styles.FixedIcons_moreInfo_item}>
-                <i class="fas fa-th-large"></i>
-                <span className={styles.Fixedcons_moreInfo_item_label}>Screens</span>
-            </div>
+            {iconsMoreInfo}
         </div>
     </div>
     )

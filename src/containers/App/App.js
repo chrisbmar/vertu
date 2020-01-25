@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.module.css';
+import data from '../../data';
 
 import Header from '../../components/Header/Header';
 import SubHeader from '../../components/SubHeader/SubHeader';
@@ -10,39 +11,28 @@ import ImageGallery from '../../components/ImageGallery/ImageGallery';
 import VehicleInfo from '../VehicleInfo/VehicleInfo';
 import Footer from '../../components/Footer/Footer';
 
-class App extends Component {
-  render () {
-
-    const billboardText1 = `The Ford Tourneo Connect is a relaxing and comfortable 
-    place to be. Great to drive, great to sit in, it boasts
-    premium finished, high quality materials and fuel 
-    efficiency without compromising everyday practicality.`;
-
-    const billboardText2 = `At Bristol Street Versa our priority is to offer so much
-    more than just the sale of a Wheelchair Accessible Vehicle (WAV). We recognise
-    that the lives of the majority of our customer aren't always plain sailing - 
-    and that's why we are commmitted to step in to make sure we are #KeepingYouGoing.`;
-
+const app = () => {
     return (
       <div>
-        <Header/>
-        <SubHeader/>
+        <Header data={data.header}/>
+        <SubHeader data={data.subHeader}/>
         <Billboard src="https://www.bristolstreetversa.com/custom/51650.jpg" 
           heading="Versa Connect" 
-          text={billboardText1}
+          text={data.billboard.text1}
           buttonText="Make an Enquiry"/>
-        <VehicleInfo />
-        <ImageGallery />
-        <CallToAction buttonText="View our Versa Connect offers"/>
+        <VehicleInfo data={data}/>
+        <ImageGallery data={data.imageGallery}/>
+        <CallToAction 
+          buttonText="View our Versa Connect offers"
+          data={data.callToAction}/>
         <Billboard src="https://www.bristolstreetversa.com/custom/51651.jpg" 
           heading="Keeping you going" 
-          text={billboardText2}
+          text={data.billboard.text2}
           buttonText="More Information"/>
-        <Footer />
-        <FixedIcons/>
+        <Footer data={data.header}/>
+        <FixedIcons data={data.fixedIcons}/>
       </div>
     );
-  }
 }
 
-export default App;
+export default app;

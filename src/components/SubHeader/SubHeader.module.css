@@ -34,7 +34,7 @@
     border-bottom: 5px solid transparent;
 }
 
-.SubHeader_carChoiceList_item___bottomBorder {
+.SubHeader_carChoiceList_item:first-child {
     border-bottom: 5px solid white;
 }
 
