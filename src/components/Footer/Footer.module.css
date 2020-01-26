@@ -60,7 +60,7 @@
 
 .Form_container {
     background-color: white;
-    width: 460px;
+    width: 500px;
     height: 190px;
     margin-right: 30px;
     box-sizing: border-box;
@@ -86,7 +86,7 @@
     background-color: #016cbd;
     border: none;
     color: white;
-    padding: 11px 10px;
+    padding: 10px 10px;
     margin-left: 4px;
     border-radius: 2px;
     text-decoration: none;
@@ -130,7 +130,7 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
     .Form {
         height: auto;
     }
