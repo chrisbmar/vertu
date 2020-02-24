@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Dimensions.module.css';
 import data from '../../data';
 
-import Aux from '../../hoc/Aux/Aux'
 import Button from '../../UI/Button/Button';
 
 const dimensions = () => {
@@ -21,7 +20,7 @@ const dimensions = () => {
      }
 
     return (
-        <Aux>
+        <React.Fragment>
             <div class={styles.Dimensions}>
                 <div className={styles.Dimensions_table}>
                     <div className={styles.Dimnsions_table_heading}>
@@ -41,7 +40,7 @@ const dimensions = () => {
             <div className={styles.Dimensions_buttonContainer}>
                 <Button buttonText="View our Versa Connect offers"/>
             </div>
-        </Aux>
+        </React.Fragment>
     )
 }
 

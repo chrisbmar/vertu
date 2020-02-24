@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import Aux from '../../hoc/Aux/Aux';
 
 const footer = (props) => {
 
@@ -11,7 +10,7 @@ const footer = (props) => {
     });
 
     return (
-        <Aux>
+        <React.Fragment>
             <footer className={styles.Footer}>
                 <div className={styles.Footer_container}>
                     <div className={styles.Footer_container_logo}>
@@ -38,7 +37,7 @@ const footer = (props) => {
                     <button className={styles.Form_container_button}>GO</button>
                 </div>
             </div>
-        </Aux>
+        </React.Fragment>
     );
 };
 

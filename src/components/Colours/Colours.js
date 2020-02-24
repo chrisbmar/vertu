@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styles from './Colours.module.css';
 import data from '../../data';
 
-import Aux from '../../hoc/Aux/Aux';
 import Button from '../../UI/Button/Button';
 
 class Colours extends Component {
@@ -25,7 +24,7 @@ class Colours extends Component {
         });
 
         return (
-            <Aux>
+            <React.Fragment>
                 <div className={styles.Colours}>
                     <div className={styles.Colours_imageContainer}>
                         <img className={styles.Colours_imageContainer_img} src={`https://www.bristolstreetversa.com/images/colour_swatches/Grand-Tourneo-Connect/${this.state.colour}.png`}></img>
@@ -41,7 +40,7 @@ class Colours extends Component {
                 <div className={styles.Colours_buttonContainer}>
                     <Button buttonText="View our Versa Connect offers"/>
                 </div>
-            </Aux>
+            </React.Fragment>
         );
     };
 }

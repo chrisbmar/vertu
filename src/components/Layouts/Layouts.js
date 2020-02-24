@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Layouts.module.css';
 import data from '../../data';
 
-import Aux from '../../hoc/Aux/Aux';
 import Button from '../../UI/Button/Button';
 
 const layouts = () => {
@@ -15,7 +14,7 @@ const layouts = () => {
         )
     });
     return (
-        <Aux>
+        <React.Fragment>
             <div className={styles.Layouts}>
                 {images}
                 <span>* Wheelchair user can sit a little further forward (not as forward as Row 2 seats)</span>
@@ -23,7 +22,7 @@ const layouts = () => {
             <div className={styles.Layouts_buttonContainer}>
                 <Button buttonText="View our Versa Connect offers"/>
             </div>
-        </Aux>
+        </React.Fragment>
     )
 }
 

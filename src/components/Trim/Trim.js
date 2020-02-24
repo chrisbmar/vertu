@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Trim.module.css';
 import data from '../../data';
 
-import Aux from '../../hoc/Aux/Aux';
 import Button from '../../UI/Button/Button';
 
 const trim = () => {
@@ -22,7 +21,7 @@ const trim = () => {
     });
 
     return (
-        <Aux>
+        <React.Fragment>
             <div className={styles.Trim}>
                 <div className={styles.Trim_mainImageContainer}>
                     <img className={styles.Trim_mainImageContainer_img} src="https://www.bristolstreetversa.com/custom/50563.jpg"></img>
@@ -34,7 +33,7 @@ const trim = () => {
             <div className={styles.Trim_buttonContainer}>
                 <Button buttonText="View our Versa Connect offers"/>
             </div>
-        </Aux>
+        </React.Fragment>
     );
 }
 
